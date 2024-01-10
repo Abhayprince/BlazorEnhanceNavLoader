@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorEnhanceNavLoader", "BlazorEnhanceNavLoader\BlazorEnhanceNavLoader.csproj", "{8D016F7D-D5A8-4025-ACAF-5B072027FDAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D016F7D-D5A8-4025-ACAF-5B072027FDAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D016F7D-D5A8-4025-ACAF-5B072027FDAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D016F7D-D5A8-4025-ACAF-5B072027FDAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D016F7D-D5A8-4025-ACAF-5B072027FDAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF5F90C8-E7F3-4990-B2A4-99CB62F206A4}
+	EndGlobalSection
+EndGlobal

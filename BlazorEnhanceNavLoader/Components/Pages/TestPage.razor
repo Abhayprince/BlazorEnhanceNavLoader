@@ -1,0 +1,35 @@
+﻿@page "/test"
+<h3>TestPage</h3>
+
+@if (!string.IsNullOrWhiteSpace(_message))
+{
+    <p class="my-2">@_message</p>
+}
+
+<EditForm Model="Model" Enhance FormName="test-form" OnSubmit="SubmitAsync">
+    <InputText @bind-Value="Model.Name" class="form-control" placeholder="Enter name"/>
+    <div class="my-3">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    <p>This form will take 4 seconds to return response</p>
+</EditForm>
+
+ @code {
+    [SupplyParameterFromForm(FormName = "test-form")]
+    public TestModel Model { get; set; } = new();
+
+    private string? _message;
+
+    private async Task SubmitAsync()
+    {
+        await Task.Delay(4000);
+        Console.WriteLine($"Name: {Model.Name}");
+        Model = new();
+        _message = $"Submitted successfully";
+    }
+
+    public class TestModel
+    {
+        public string Name { get; set; }
+    }
+}
